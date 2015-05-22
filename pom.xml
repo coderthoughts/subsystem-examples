@@ -17,6 +17,8 @@
         <module>feature-bundle2</module>
         <module>feature-subsystem</module>
         <module>feature-subsystem2</module>
+        <module>application-subsystem</module>
+        <module>application-subsystem2</module>
     </modules>
 
   <build>
