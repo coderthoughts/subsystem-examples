@@ -11,6 +11,7 @@
     <modules>
         <module>api-bundle</module>
         <module>svc-bundle</module>
+        <module>svc-bundle2</module>
         <module>use-bundle</module>
         <module>feature-subsystem</module>
     </modules>
