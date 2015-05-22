@@ -19,6 +19,7 @@
         <module>feature-subsystem2</module>
         <module>application-subsystem</module>
         <module>application-subsystem2</module>
+        <module>application-subsystem-top</module>
     </modules>
 
   <build>
