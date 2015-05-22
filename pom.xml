@@ -14,7 +14,9 @@
         <module>svc-bundle2</module>
         <module>use-bundle</module>
         <module>feature-bundle</module>
+        <module>feature-bundle2</module>
         <module>feature-subsystem</module>
+        <module>feature-subsystem2</module>
     </modules>
 
   <build>
