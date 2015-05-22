@@ -20,6 +20,7 @@
         <module>application-subsystem</module>
         <module>application-subsystem2</module>
         <module>application-subsystem-top</module>
+        <module>application-subsystem-nosvc</module>
         <module>composite-subsystem</module>
     </modules>
 

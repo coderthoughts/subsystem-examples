@@ -10,28 +10,10 @@
       <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>composite-subsystem</artifactId>
+    <artifactId>application-subsystem-nosvc</artifactId>
     <packaging>esa</packaging>
 
     <dependencies>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>api-bundle</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>svc-bundle</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>svc-bundle2</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>use-bundle</artifactId>
@@ -49,10 +31,7 @@
                 <configuration>
                     <generateManifest>true</generateManifest>
                     <instructions>
-                        <Import-Package>org.osgi.framework,org.osgi.util.tracker</Import-Package>
-                        <Export-Package>org.coderthoughts.pizza.api;version=1.0.0</Export-Package>
-                        <Subsystem-ExportService>org.coderthoughts.pizza.api.Pizza; filter:="(toppings&lt;=2)"</Subsystem-ExportService>
-                        <Subsystem-Type>osgi.subsystem.composite</Subsystem-Type>
+                        <Subsystem-Type>osgi.subsystem.application</Subsystem-Type>
                     </instructions>
                 </configuration>
             </plugin>

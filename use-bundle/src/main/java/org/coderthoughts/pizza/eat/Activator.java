@@ -11,6 +11,7 @@ public class Activator implements BundleActivator {
 
     @Override
     public void start(BundleContext context) throws Exception {
+        System.out.println("Looking for pizzas...");
         st = new ServiceTracker<Pizza, Pizza>(context, Pizza.class, null) {
             @Override
             public Pizza addingService(ServiceReference<Pizza> reference) {
