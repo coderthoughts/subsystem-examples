@@ -15,15 +15,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.5</version>
-        </dependency>
-        
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>1.7.5</version>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>feature-bundle</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 
@@ -37,7 +31,7 @@
                 <configuration>
                     <generateManifest>true</generateManifest>
                     <instructions>
-                        <Subsystem-Type>feature</Subsystem-Type>
+                        <Subsystem-Type>osgi.subsystem.feature</Subsystem-Type>
                     </instructions>
                 </configuration>
             </plugin>
