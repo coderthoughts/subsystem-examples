@@ -15,7 +15,7 @@ public class Activator implements BundleActivator {
             @Override
             public Pizza addingService(ServiceReference<Pizza> reference) {
                 Pizza pizza = super.addingService(reference);
-                System.out.println("Hmmm pizza: " + pizza + "!");
+                System.out.println("Hmmm pizza! " + pizza.getName());
                 return pizza;
             }
         };
