@@ -4,6 +4,7 @@ import org.coderthoughts.pizza.api.Pizza;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceReference;
+import org.osgi.service.subsystem.Subsystem;
 import org.osgi.util.tracker.ServiceTracker;
 
 public class Activator implements BundleActivator {
@@ -11,12 +12,22 @@ public class Activator implements BundleActivator {
 
     @Override
     public void start(BundleContext context) throws Exception {
-        System.out.println("Looking for pizzas...");
+        ServiceReference<Subsystem> ssref = context.getServiceReference(Subsystem.class);
+        String p = null;
+        if (ssref != null) {
+            Subsystem ss = context.getService(ssref);
+            if (ss != null) {
+                p = "[Subsystem " + ss.getSubsystemId() + "] ";
+            }
+        }
+        final String prefix = (p != null) ? p : "";
+
+        System.out.println(prefix + "Looking for pizzas...");
         st = new ServiceTracker<Pizza, Pizza>(context, Pizza.class, null) {
             @Override
             public Pizza addingService(ServiceReference<Pizza> reference) {
                 Pizza pizza = super.addingService(reference);
-                System.out.println("Hmmm pizza! " + pizza.getName());
+                System.out.println(prefix + "Hmmm pizza! " + pizza.getName());
                 return pizza;
             }
         };
