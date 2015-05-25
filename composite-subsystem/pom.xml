@@ -49,7 +49,10 @@
                 <configuration>
                     <generateManifest>true</generateManifest>
                     <instructions>
-                        <Import-Package>org.osgi.framework,org.osgi.util.tracker</Import-Package>
+                        <Import-Package>
+                            org.osgi.framework;version="[1.7, 2)",
+                            org.osgi.util.tracker;version="[1.5, 2)",
+                            org.osgi.service.subsystem;version="[1.0, 2)"</Import-Package>
                         <Export-Package>org.coderthoughts.pizza.api;version=1.0.0</Export-Package>
                         <Subsystem-ExportService>org.coderthoughts.pizza.api.Pizza; filter:="(toppings&lt;=2)"</Subsystem-ExportService>
                         <Subsystem-Type>osgi.subsystem.composite</Subsystem-Type>

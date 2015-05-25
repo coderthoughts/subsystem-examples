@@ -17,7 +17,7 @@ public class Activator implements BundleActivator {
         if (ssref != null) {
             Subsystem ss = context.getService(ssref);
             if (ss != null) {
-                p = "[Subsystem " + ss.getSubsystemId() + "] ";
+                p = "[Scope " + ss.getSubsystemId() + "] ";
             }
         }
         final String prefix = (p != null) ? p : "";
