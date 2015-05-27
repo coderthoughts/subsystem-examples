@@ -26,7 +26,6 @@
             <plugin>
                 <groupId>org.apache.aries</groupId>
                 <artifactId>esa-maven-plugin</artifactId>
-                <version>1.0.0</version>
                 <extensions>true</extensions>
                 <configuration>
                     <generateManifest>true</generateManifest>
