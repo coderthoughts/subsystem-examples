@@ -16,17 +16,7 @@
     <modules>
         <module>api-bundle</module>
         <module>svc-bundle</module>
-        <module>svc-bundle2</module>
         <module>use-bundle</module>
-        <module>feature-bundle</module>
-        <module>feature-bundle2</module>
-        <module>feature-subsystem</module>
-        <module>feature-subsystem2</module>
-        <module>application-subsystem</module>
-        <module>application-subsystem2</module>
-        <module>application-subsystem-top</module>
-        <module>application-subsystem-nosvc</module>
-        <module>composite-subsystem</module>
     </modules>
 
     <build>
@@ -43,12 +33,7 @@
                 <plugin>
                     <groupId>org.apache.felix</groupId>
                     <artifactId>maven-bundle-plugin</artifactId>
-                    <version>2.5.4</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.aries</groupId>
-                    <artifactId>esa-maven-plugin</artifactId>
-                    <version>1.0.0</version>
+                    <version>2.5.5-SNAPSHOT</version>
                 </plugin>
             </plugins>
         </pluginManagement>
