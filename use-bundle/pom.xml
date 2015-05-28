@@ -14,6 +14,10 @@
       <version>1.0.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
 
+    <properties>
+        <checkstyle.violationSeverity>warning</checkstyle.violationSeverity>
+        <granite.java.version>8</granite.java.version>
+    </properties>
     <build>
         <plugins>
             <plugin>
