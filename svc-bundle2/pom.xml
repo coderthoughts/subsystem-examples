@@ -25,6 +25,7 @@
                         <Import-Package>*</Import-Package>
                         <Export-Package></Export-Package>
                         <Private-Package>org.coderthoughts.pizza.svc2</Private-Package>
+                        <Provide-Capability>osgi.service;objectClass:List&lt;String&gt;="org.coderthoughts.pizza.api.Pizza"</Provide-Capability>
                     </instructions>
                 </configuration>
             </plugin>
